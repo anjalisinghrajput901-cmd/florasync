@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Leaf Disease AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+</head>
+<body>
+
+<div class="login-container">
+
+    <div class="login-box">
+
+        <h2>🌿 Welcome Back</h2>
+        <p>Login to continue</p>
+
+        <form action="/dashboard" method="GET">
+
+            <input type="email" placeholder="Email Address" required>
+
+            <input type="password" placeholder="Password" required>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p class="signup">
+            Don't have an account?
+            <a href="/signup">Create Account</a>
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

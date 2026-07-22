@@ -1,0 +1,297 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4fff4;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#2e7d32;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+}
+
+nav button{
+    padding:10px 20px;
+    background:white;
+    color:#2e7d32;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height:80vh;
+    padding:50px;
+}
+
+.left{
+    width:50%;
+}
+
+.left h1{
+    font-size:50px;
+    color:#2e7d32;
+}
+
+.left p{
+    margin-top:20px;
+    font-size:20px;
+    line-height:30px;
+}
+
+.start{
+    margin-top:30px;
+    padding:15px 35px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.right img{
+    width:450px;
+}
+/* About Section */
+
+.about{
+    padding:80px;
+    background:white;
+    text-align:center;
+}
+
+.about h2{
+    font-size:40px;
+    color:#2e7d32;
+    margin-bottom:20px;
+}
+
+.about p{
+    width:70%;
+    margin:auto;
+    font-size:20px;
+    line-height:35px;
+}
+/* Features Section */
+
+.features{
+    padding:80px;
+    background:#f4fff4;
+    text-align:center;
+}
+
+.features h2{
+    color:#2e7d32;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.feature-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:250px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin:20px 0;
+    color:#2e7d32;
+}
+
+.card p{
+    line-height:25px;
+}
+/* How It Works */
+
+.how{
+    padding:80px;
+    background:white;
+    text-align:center;
+}
+
+.how h2{
+    color:#2e7d32;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.steps{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.step{
+    width:240px;
+    background:#f4fff4;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+    transition:0.3s;
+}
+
+.step:hover{
+    transform:translateY(-10px);
+}
+
+.step h3{
+    color:#2e7d32;
+    margin-bottom:15px;
+}
+
+.step p{
+    line-height:25px;
+}
+/* Contact Section */
+
+.contact{
+    padding:80px;
+    background:#f4fff4;
+    text-align:center;
+}
+
+.contact h2{
+    color:#2e7d32;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.contact-container{
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.contact-info{
+    text-align:left;
+}
+
+.contact-info h3{
+    color:#2e7d32;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    font-size:18px;
+    margin:15px 0;
+}
+
+.contact-form{
+    width:400px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.contact-form textarea{
+    height:120px;
+    resize:none;
+}
+
+.contact-form button{
+    width:100%;
+    padding:15px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.contact-form button:hover{
+    background:#1b5e20;
+}
+/* Footer */
+
+.footer{
+    background:#1b5e20;
+    color:white;
+    padding:40px 20px;
+    text-align:center;
+}
+
+.footer h2{
+    margin-bottom:15px;
+}
+
+.footer p{
+    margin:10px 0;
+}
+
+.footer-links{
+    margin:20px 0;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.footer-links a:hover{
+    text-decoration:underline;
+}
+
+.copyright{
+    margin-top:20px;
+    font-size:14px;
+    opacity:0.8;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prediction Result</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+
+</head>
+
+<body>
+
+<div class="result-box">
+
+<h1>🌿 AI Prediction Result</h1>
+
+<!-- Uploaded Image -->
+<img src="/{{ image_path }}" width="250">
+
+<h2>
+Disease: {{ disease }}
+</h2>
+
+<h3>
+Confidence: {{ confidence }}%
+</h3>
+
+<hr>
+
+<h3>📖 Description</h3>
+
+<p>
+{{ description }}
+</p>
+
+<h3>⚠ Symptoms</h3>
+
+<p>
+{{ symptoms }}
+</p>
+
+<h3>💊 Treatment Suggestion</h3>
+
+<p>
+{{ treatment }}
+</p>
+
+<h3>🛡 Prevention Tips</h3>
+
+<p>
+{{ prevention }}
+</p>
+
+<br>
+
+<a href="/dashboard">
+    <button>
+        Analyze Another Leaf
+    </button>
+</a>
+
+</div>
+
+</body>
+
+</html>

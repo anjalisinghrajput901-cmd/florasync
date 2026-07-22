@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf Disease Analysis</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            🌿 Leaf Disease AI
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how">How It Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="/login">
+            <button>Login</button>
+
+        </a>
+    </nav>
+
+    <section class="hero">
+
+        <div class="left">
+
+            <h1>
+                AI Assisted Plant Disease Detection
+            </h1>
+
+            <p>
+                Upload a leaf image and detect plant diseases instantly using Artificial Intelligence.
+            </p>
+
+            <a href="/login">
+                <button class="start">
+                    Get Started
+                </button>
+            </a>
+
+        </div>
+
+        <div class="right">
+
+            <img src="{{ url_for('static', filename='images/leaf.png') }}" alt="Leaf">
+
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+
+       <h2>About Our Project</h2>
+
+       <p>
+          Our AI-powered Leaf Disease Detection System helps farmers detect plant
+          diseases by analyzing leaf images. The system provides accurate disease
+          prediction and treatment suggestions using Artificial Intelligence.
+      </p>
+
+    </section>
+    <!-- Features Section -->
+<section id="features" class="features">
+
+    <h2>Our Features</h2>
+
+    <div class="feature-container">
+
+        <div class="card">
+            <h3>🌿 Leaf Disease Detection</h3>
+            <p>Upload a leaf image and detect plant diseases using AI.</p>
+        </div>
+
+        <div class="card">
+            <h3>🤖 AI Prediction</h3>
+            <p>Fast and accurate disease prediction powered by Artificial Intelligence.</p>
+        </div>
+
+        <div class="card">
+            <h3>💊 Treatment Suggestions</h3>
+            <p>Get recommended remedies and treatment for detected diseases.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Instant Results</h3>
+            <p>Receive prediction results within a few seconds.</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- How It Works -->
+<section id="how" class="how">
+
+    <h2>How It Works</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <h3>📤 Upload</h3>
+            <p>Upload a clear image of the plant leaf.</p>
+        </div>
+
+        <div class="step">
+            <h3>🤖 AI Analysis</h3>
+            <p>Our AI model analyzes the uploaded image.</p>
+        </div>
+
+        <div class="step">
+            <h3>🦠 Disease Detection</h3>
+            <p>The disease is detected with high accuracy.</p>
+        </div>
+
+        <div class="step">
+            <h3>💊 Treatment</h3>
+            <p>Get treatment and prevention suggestions instantly.</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- Contact Section -->
+<section id="contact" class="contact">
+
+    <h2>Contact Us</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+
+            <p>📍 Hyderabad, Telangana, India</p>
+            <p>📞 +91 9876543210</p>
+            <p>📧 support@leafdiseaseai.com</p>
+        </div>
+
+        <div class="contact-form">
+
+            <input type="text" placeholder="Your Name">
+
+            <input type="email" placeholder="Your Email">
+
+            <textarea placeholder="Your Message"></textarea>
+
+            <button>Send Message</button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <h2>🌿 Leaf Disease AI</h2>
+
+        <p>
+            AI Powered Plant Disease Detection System for Farmers and Researchers.
+        </p>
+
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Leaf Disease AI | All Rights Reserved
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <h1>🌿 Leaf Disease Detection</h1>
+
+    <p>Upload a leaf image for AI prediction.</p>
+
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+        <input type="file" name="leaf" accept="image/*">
+        <button type="submit">
+            Predict Disease
+        </button>
+    </form>
+
+</div>
+
+</body>
+</html>

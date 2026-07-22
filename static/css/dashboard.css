@@ -1,0 +1,27 @@
+body{
+    font-family:Arial;
+    background:#f4fff4;
+}
+
+.dashboard{
+    width:500px;
+    margin:80px auto;
+    background:white;
+    padding:40px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+button{
+    background:#2E7D32;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1B5E20;
+}
