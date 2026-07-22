@@ -4,13 +4,12 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
 import os
-import gdown
 
 app = Flask(__name__)
 
 MODEL_PATH = "model/leaf_model.keras"
 
-model = load_model(MODEL_PATH)
+model = load_model(MODEL_PATH, compile=False)
 
 classes = [
     "Apple___Apple_scab",
