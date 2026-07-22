@@ -13,7 +13,7 @@ MODEL_PATH = "model/leaf_model.h5"
 if not os.path.exists(MODEL_PATH):
     os.makedirs("model", exist_ok=True)
 
-    file_id = "YOUR_GOOGLE_DRIVE_FILE_ID"
+    file_id = "1HQ5Y2Gie1douUoMXgjUb9WB5Q2MOKgMe"
 
     url = f"https://drive.google.com/uc?id={file_id}"
 
