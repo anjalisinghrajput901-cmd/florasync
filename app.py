@@ -4,10 +4,22 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
 import os
+import gdown
 
 app = Flask(__name__)
 
-model = load_model("model/leaf_model.h5")
+MODEL_PATH = "model/leaf_model.h5"
+
+if not os.path.exists(MODEL_PATH):
+    os.makedirs("model", exist_ok=True)
+
+    file_id = "YOUR_GOOGLE_DRIVE_FILE_ID"
+
+    url = f"https://drive.google.com/uc?id={file_id}"
+
+    gdown.download(url, MODEL_PATH, quiet=False)
+
+model = load_model(MODEL_PATH)
 
 classes = [
     "Apple___Apple_scab",

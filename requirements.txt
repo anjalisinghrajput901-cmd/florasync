@@ -4,3 +4,4 @@ numpy
 Pillow
 gunicorn
 h5py
+gdown
