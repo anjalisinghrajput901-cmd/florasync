@@ -8,16 +8,7 @@ import gdown
 
 app = Flask(__name__)
 
-MODEL_PATH = "model/leaf_model.h5"
-
-if not os.path.exists(MODEL_PATH):
-    os.makedirs("model", exist_ok=True)
-
-    file_id = "1HQ5Y2Gie1douUoMXgjUb9WB5Q2MOKgMe"
-
-    url = f"https://drive.google.com/uc?id={file_id}"
-
-    gdown.download(url, MODEL_PATH, quiet=False)
+MODEL_PATH = "model/leaf_model.keras"
 
 model = load_model(MODEL_PATH)
 
